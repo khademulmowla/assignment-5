@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blogs</title>
+    <!-- lexend font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <!-- daisy  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        green: '#B4F461',
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <nav class=" bg-navBg">
+            <div class="navbar container mx-auto p-6 gap-3 flex flex-col lg:flex-row justify-center items-center ">
+                <div class="navbar-start flex flex-col items-center lg:flex-row ">
+                    <a id="home-info" class="btn bg-green px-6 font-bold text-lg">Home</a>
+                </div>
+                <div class="navbar-center flex flex-col items-center gap-3 lg:flex-row ">
+                    <img src="./assets/logo.png" alt="">
+                    <h2 class="font-bold text-lg">Donate Bangladesh</h2>
+                </div>
+                <div class="navbar-end flex flex-col items-center lg:flex-row">
+                    <div class="flex items-center gap-2">
+                        <img src="./assets/coin.png" alt="">
+                        <p class="font-semibold text-lg">
+                            <span id="available-balance">5000</span>
+                            <span>BDT</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <section class="container p-6">
+            <h1 class="text-5xl font-bold mb-5">Important FAQ</h1>
+            <div class="collapse collapse-arrow bg-base-200 border-2 mb-1">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title text-lg font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>Document Object Model (DOM) is a way of organizing and representing the elements of a web
+                        document (like HTML or XML) as a structured set of objects. </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 border-2 mb-1">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-lg font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p><span class="text-lg font-semibold">The most common ways to select DOM elements:</span>
+                        <li>getElementById()</li>
+                        <li>getElementsByClassName()</li>
+                        <li>getElementsByTagName()</li>
+                        <li>querySelector()</li>
+                        <li>querySelectorAll()</li>
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 border-2 mb-1">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-lg font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event delegation refers to the process of using event propagation (bubbling) to handle events at
+                        a higher level in the DOM than the element on which the event originated. <br>
+                        It allows to attach a single listener to the parent container.
+                    </p>
+                </div>
+            </div>
+            <div class="collapse collapse-arrow bg-base-200 border-2 mb-1">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title text-lg font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p><span class="text-lg font-semibold">Manipulating Element's Attributes:</span>
+                        <li>getAttribute(attributeName)</li>
+                        <li>setAttribute(attributeName, value)</li>
+                        <li>removeAttribute(attributeName)</li>
+                        <br>
+                        <span class="text-lg font-semibold">Manipulating Element's Styles:</span>
+                        <li>element.style.property</li>
+                        <li>classList.add('className')</li>
+                        <li>classList.remove('className')</li>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="js/blog.js"></script>
+</body>
+
+</html>
