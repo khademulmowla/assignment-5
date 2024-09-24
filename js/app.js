@@ -46,7 +46,7 @@ document.getElementById('btn-noa').addEventListener('click', function (event) {
     const inputNoa = getInputAmount('input-amount-noa');
     const totalNoa = getTextValue('total-amount-noa');
     const availableAmount = getTextValue('available-balance');
-    if (isNaN(inputNoa) || inputNoa < 0 || inputNoa > availableAmount || availableAmount <= 0) {
+    if (isNaN(inputNoa) || inputNoa < 0 || inputNoa > availableAmount || inputNoa <= 0) {
         document.getElementById('my_modal_1').close();
         return alert('Please provide valid data');
     }
@@ -72,7 +72,7 @@ document.getElementById('btn-feni').addEventListener('click', function (event) {
     const inputFeni = getInputAmount('input-amount-feni');
     const totalFeni = getTextValue('total-amount-feni');
     const availableAmount = getTextValue('available-balance');
-    if (isNaN(inputFeni) || inputFeni < 0 || inputFeni > availableAmount || availableAmount <= 0) {
+    if (isNaN(inputFeni) || inputFeni < 0 || inputFeni > availableAmount || inputFeni <= 0) {
         document.getElementById('my_modal_2').close();
         return alert('Please provide valid data');
     }
@@ -99,7 +99,7 @@ document.getElementById('btn-quota').addEventListener('click', function (event) 
     const inputQuota = getInputAmount('input-amount-quota');
     const totalQuota = getTextValue('total-amount-quota');
     const availableAmount = getTextValue('available-balance');
-    if (isNaN(inputQuota) || inputQuota < 0 || inputQuota > availableAmount || availableAmount <= 0) {
+    if (isNaN(inputQuota) || inputQuota < 0 || inputQuota > availableAmount || inputQuota <= 0) {
         document.getElementById('my_modal_3').close();
         return alert('Please provide valid data');
     }
